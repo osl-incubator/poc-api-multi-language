@@ -1,6 +1,6 @@
 # core
 
-Welcome to ProjectTemplate!
+Welcome to R PoC Multi API!
 
 This file introduces you to ProjectTemplate, but you should eventually replace
 the contents of this file with an introduction to your project. People who
