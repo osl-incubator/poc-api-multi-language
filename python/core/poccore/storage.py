@@ -1,21 +1,20 @@
 """Main module."""
 from __future__ import annotations
 
-from dataclasses import dataclass
-
-import boto3
 import pandas as pd
 
 
-def price_avg(
-    path_parquet_input: str,
-    path_parquet_output: str,
+def avg_price(
     groupby: str,
-    key: str,
+    field: str,
+    input_path: str,
+    output_path: str,
 ):
-    df = pd.read_parquet(path_parquet_input)
+    df = pd.read_parquet(input_path)
 
-    series = df.groupby(groupby)[key].mean()
+    series = df.groupby(groupby)[field].mean()
     result = pd.DataFrame(series).reset_index()
 
-    result.to_parquet(path_parquet_output)
+    result.to_parquet(output_path)
+
+    return True

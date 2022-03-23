@@ -4,7 +4,6 @@ from uuid import uuid4
 import botocore
 import pandas as pd
 import pytest
-from poccore import settings
 
 
 def parquet_tmp_path():
