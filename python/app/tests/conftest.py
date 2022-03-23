@@ -2,7 +2,6 @@ import botocore
 import pandas as pd
 import pytest
 from poccore import settings
-from poccore.storage import S3ConnectionConfig, get_cloud_connection
 
 
 @pytest.fixture
