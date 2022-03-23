@@ -1,4 +1,4 @@
-Welcome to PoC API Multi Language's documentation!
+Welcome to PoC Multi-API's documentation!
 ======================================
 
 .. toctree::

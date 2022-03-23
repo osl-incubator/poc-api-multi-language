@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  minio:
+    image: minio/minio
+    env_file:
+      - ../.env
+    environment:
+      - MINIO_ACCESS_KEY=poc-multi-api
+      - MINIO_SECRET_KEY=poc-multi-api
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+      start_period: 40s  # requires docker-compose 3.4
+    ports:
+      - 9000:9000
+    command: ["server", "--config-dir", "/etc/minio", "/data"]

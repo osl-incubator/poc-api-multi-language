@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=poc-api-multi-language
+set SPHINXPROJ=poc-multi-api
 
 if "%1" == "" goto help
 

@@ -1,6 +1,6 @@
-site_name: PoC API Multi Language
-site_url: https://opensciencelabs.github.io/poc-api-multi-language
-repo_url: https://github.com/osl-incubator/poc-api-multi-language.git
+site_name: PoC Multi-API
+site_url: https://opensciencelabs.github.io/poc-multi-api
+repo_url: https://github.com/osl-incubator/poc-multi-api.git
 # extra_css:
 #   - stylesheets/extra.css
 theme:
@@ -111,7 +111,7 @@ markdown_extensions:
   - tables
   - toc
 extra:
-  project_name: "PoC API Multi Language"
+  project_name: "PoC Multi-API"
   team:
     - name: "Active maintainers"
       members:
@@ -123,11 +123,11 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/xmnlab
     - icon: fontawesome/brands/github
-      link: https://github.com/osl-incubator/poc-api-multi-language.git
+      link: https://github.com/osl-incubator/poc-multi-api.git
   support_levels:
     supported:
       icon: :material-check-decagram:{ .verified }
-      description: Tested in CI. If this doesn't work for you, please [file an issue](https://github.com/osl-incubator/poc-api-multi-language.git/issues/new).
+      description: Tested in CI. If this doesn't work for you, please [file an issue](https://github.com/osl-incubator/poc-multi-api.git/issues/new).
     bug:
       icon: :material-bug:{ .bug }
       description: Should work but doesn't because upstream is broken. Supported on a best-effort basis.
@@ -135,4 +135,4 @@ extra:
       icon: :material-cancel:{ .cancel }
       description: Unlikely to ever be supported or no upstream support.
 
-copyright: "Copyright &copy; 2022, PoC API Multi Language Team"
+copyright: "Copyright &copy; 2022, PoC Multi-API Team"

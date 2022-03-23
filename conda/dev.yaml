@@ -1,8 +1,10 @@
-name: poc-api-multi-language
+name: poc-multi-api
 channels:
   - nodefaults
   - conda-forge
 dependencies:
   - python
+  - r-base
+  - docker-compose
   - poetry
   - nodejs  # used by semantic-release

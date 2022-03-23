@@ -8,12 +8,12 @@
       {
         "replacements": [
           {
-            "files": ["poc_api_multi_language/__init__.py"],
+            "files": ["poc_multi_api/__init__.py"],
             "from": "return \".*\"  # semantic-release",
             "to": "return \"${nextRelease.version}\"  # semantic-release",
             "results": [
               {
-                "file": "poc_api_multi_language/__init__.py",
+                "file": "poc_multi_api/__init__.py",
                 "hasChanged": true,
                 "numMatches": 1,
                 "numReplacements": 1
@@ -64,7 +64,7 @@
         "assets": [
           "pyproject.toml",
           "CHANGELOG.md",
-          "poc_api_multi_language/__init__.py"
+          "poc_multi_api/__init__.py"
         ],
         "message": "chore(release): ${nextRelease.version}"
       }

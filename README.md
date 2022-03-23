@@ -1,10 +1,10 @@
-# PoC API Multi Language
+# PoC Multi-API
 
-PoC API Multi Language
+PoC Multi-API
 
 
 * Free software: MIT license
-* Documentation: https://poc-api-multi-language.readthedocs.io.
+* Documentation: https://poc-multi-api.readthedocs.io.
 
 
 ## Features

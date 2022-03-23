@@ -15,10 +15,13 @@ export PRINT_HELP_PYSCRIPT
 
 SPHINXOPTS    =
 SPHINXBUILD   = python -msphinx
-SPHINXPROJ    = poc-api-multi-language
+SPHINXPROJ    = poc-multi-api
 SOURCEDIR     = docs/
 BUILDDIR      = docs/_build
 
+# docker
+DOCKER=docker-compose --env-file .env --file docker/docker-compose.yaml
+SERVICES=
 
 .PHONY:help
 help:
@@ -50,10 +53,42 @@ test: ## run tests quickly with the default Python
 .PHONY:docs
 docs: ## generate Sphinx HTML documentation, including API docs
 	rm -rf docs/_build
-	# sphinx-apidoc -o docs/_build poc_api_multi_language
+	# sphinx-apidoc -o docs/_build poc_multi_api
 	#$(SPHINXBUILD) "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	mkdocs build
 
 .PHONY:build
 build:
 	poetry build
+
+# docker
+
+
+.PHONY:docker-build
+docker-build:
+	$(DOCKER) build
+	$(DOCKER) pull
+
+
+.PHONY:docker-start
+docker-start:
+	$(DOCKER) up -d ${SERVICES}
+
+
+.PHONY:docker-stop
+docker-stop:
+	$(DOCKER) stop ${SERVICES}
+
+
+.PHONY:docker-restart
+docker-restart: docker-stop docker-start
+	echo "[II] Docker services restarted!"
+
+
+.PHONY:docker-logs
+docker-logs:
+	$(DOCKER) logs --follow --tail 100 ${SERVICES}
+
+.PHONY: docker-wait
+docker-wait:
+	echo ${SERVICES} | xargs -t -n1 ./docker/healthcheck.sh

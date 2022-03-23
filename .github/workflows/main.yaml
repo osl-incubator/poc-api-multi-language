@@ -22,7 +22,7 @@ jobs:
         mamba-version: "*"
         environment-file: conda/dev.yaml
         channels: conda-forge,nodefaults
-        activate-environment: poc-api-multi-language
+        activate-environment: poc-multi-api
         use-mamba: true
         miniforge-variant: Mambaforge
 

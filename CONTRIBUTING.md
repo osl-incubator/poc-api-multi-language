@@ -9,7 +9,7 @@ You can contribute in many ways:
 
 ### Report Bugs
 
-Report bugs at https://github.com/osl-incubator/poc-api-multi-language.git/issues.
+Report bugs at https://github.com/osl-incubator/poc-multi-api.git/issues.
 
 If you are reporting a bug, please include:
 
@@ -31,14 +31,14 @@ it.
 
 ### Write Documentation
 
-PoC API Multi Language could always use more documentation,
-whether as part of the official PoC API Multi Language docs,
+PoC Multi-API could always use more documentation,
+whether as part of the official PoC Multi-API docs,
 in docstrings, or even on the web in blog posts, articles, and such.
 
 ### Submit Feedback
 
 The best way to send feedback is to file an issue at
-https://github.com/osl-incubator/poc-api-multi-language.git/issues.
+https://github.com/osl-incubator/poc-multi-api.git/issues.
 
 If you are proposing a feature:
 
@@ -50,20 +50,20 @@ If you are proposing a feature:
 
 ## Get Started!
 
-Ready to contribute? Here’s how to set up `poc-api-multi-language` for local development.
+Ready to contribute? Here’s how to set up `poc-multi-api` for local development.
 
-1.  Fork the `poc-api-multi-language` repo on GitHub.
+1.  Fork the `poc-multi-api` repo on GitHub.
 
 2.  Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/poc-api-multi-language.git
+    $ git clone git@github.com:your_name_here/poc-multi-api.git
 
 3.  Install your local copy into a virtualenv. Assuming you have
     virtualenvwrapper installed, this is how you set up your fork for
     local development::
 
-    $ mkvirtualenv poc-api-multi-language
-    $ cd poc-api-multi-language/
+    $ mkvirtualenv poc-multi-api
+    $ cd poc-multi-api/
     $ python setup.py develop
 
 4.  Create a branch for local development::
@@ -102,7 +102,7 @@ Before you submit a pull request, check that it meets these guidelines:
 To run a subset of tests::
 
 ```
-$ pytest tests.test_poc_api_multi_language
+$ pytest tests.test_poc_multi_api
 ```
 
 ## Release

@@ -1,4 +1,4 @@
-* PoC API Multi Language version:
+* PoC Multi-API version:
 * Python version:
 * Operating System:
 

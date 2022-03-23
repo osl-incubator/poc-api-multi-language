@@ -1,0 +1,8 @@
+name: poc-multi-api-python
+channels:
+  - nodefaults
+  - conda-forge
+dependencies:
+  - python
+  - docker-compose
+  - poetry
