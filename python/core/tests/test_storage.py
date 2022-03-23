@@ -6,7 +6,7 @@ from poccore import storage
 def test_price_avg(df_prices, input_path, output_path):
     df_prices.to_parquet(input_path)
 
-    storage.price_avg(input_path, output_path)
+    storage.price_avg(input_path, output_path, groupby="brand", key="price")
 
     result = pd.read_parquet(output_path)
 
