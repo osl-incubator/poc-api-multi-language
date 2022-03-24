@@ -1,0 +1,11 @@
+name: poc-multi-api-r
+channels:
+  - nodefaults
+  - conda-forge
+dependencies:
+  - r-base
+  - r-essentials
+  - r-httr
+  - r-dplr
+  - r-testit
+  - r-arrow
