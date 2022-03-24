@@ -2,10 +2,10 @@ from __future__ import annotations
 
 import requests
 
-POC_URL = "http://localhost:8000"
+from pocapi.settings import POCAPI_URL
 
 
 def avg_list(values: list) -> float | int | None:
-    url = f"{POC_URL}/simple/avg-list"
-    x = requests.post(url, json={"values": values})
-    return x.json()
+    url = f"{POCAPI_URL}/simple/avg-list"
+    response = requests.post(url, json={"values": values})
+    return response.json()
